@@ -1,0 +1,9 @@
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+    <div class="col" *ngFor="let data of list.data">
+        <div class="card">
+            <p>{{data.rank}}</p>
+            <p>{{data.title}}</p>
+            <button class="btn btn-warning d-block mx-auto" (click)="getdetailedData(data.id)"> Get Details </button>
+        </div>
+    </div>
+</div>

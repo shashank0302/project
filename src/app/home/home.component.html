@@ -1,0 +1,8 @@
+<div class="row row-cols-sm-2 row-cols-1">
+  <div class="col" *ngFor="let i of category">
+    <div class="card bg-dark text-white m-5">
+        <p>{{i.name}}</p>
+        <button class="btn btn-warning m-3 d-block mx-auto" (click)="getFullData(i.id)">Get the List</button>
+    </div>
+  </div>
+</div>
